@@ -12,7 +12,7 @@ export default function New({ history }){
     const [thumbnail, setThumbnail] = useState(null);
 
     const preview = useMemo(() => {
-        return thumbnail ? URL.createObjectURL(thumbnail) : null;
+        return thumbnail ? thumbnail : null;
     }, [thumbnail])
 
     async function handleSubmit(event){
