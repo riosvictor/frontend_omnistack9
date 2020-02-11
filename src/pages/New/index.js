@@ -42,7 +42,7 @@ export default function New({ history }){
             >                
                 <img src={camera} alt="Select img" />
             </label>
-            <input type="url" placeholder="https://example.com" pattern="https://.*" size="30" onChange={event => setThumbnail(event.target.files[0])}/>
+            <input type="url" placeholder="https://example.com" pattern="https://.*" size="30" onChange={event => setThumbnail(event.target.value)}/>
 
             <label htmlFor="company">EMPRESA *</label>
             <input 
