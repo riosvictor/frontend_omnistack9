@@ -39,10 +39,10 @@ export default function New({ history }){
                 id="thumbnail" 
                 style={{ backgroundImage: `url(${preview})` }}
                 className={thumbnail ? 'has-thumbnail' : ''}
-            >
-                <input type="url" placeholder="https://example.com" pattern="https://.*" size="30" onChange={event => setThumbnail(event.target.files[0])}/>
+            >                
                 <img src={camera} alt="Select img" />
             </label>
+            <input type="url" placeholder="https://example.com" pattern="https://.*" size="30" onChange={event => setThumbnail(event.target.files[0])}/>
 
             <label htmlFor="company">EMPRESA *</label>
             <input 
