@@ -3,7 +3,6 @@ import api from '../../services/api';
 
 import camera from '../../assets/camera.svg';
 import './styles.css';
-import { declareOpaqueType } from '@babel/types';
 
 export default function New({ history }){
     const [company, setCompany] = useState('');
